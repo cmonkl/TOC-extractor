@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  my_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - TOKEN_API_BOT_FH=${TOKEN_API_BOT_FH}
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge

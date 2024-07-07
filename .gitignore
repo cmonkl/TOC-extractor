@@ -1,0 +1,4 @@
+_*.py
+__pycache__/*
+dataset/*
+uploads/*
